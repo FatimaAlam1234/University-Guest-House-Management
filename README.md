@@ -21,12 +21,12 @@ To run this project, you will need to set up a database and  add it to your .env
 1. Clone GitHub repo for this project locally
 
 	```console
-	git clone https://github.com/monikakunwarshaktawat/TeamTriadProject.git
+	https://github.com/FatimaAlam1234/University-Guest-House-Management.git
 	```
 
 2. cd into your project
 	```console
-	cd TeamTriadProject
+	cd University-Guest-House-Management
 	```
 3.  Install Composer Dependencies
 	```console
