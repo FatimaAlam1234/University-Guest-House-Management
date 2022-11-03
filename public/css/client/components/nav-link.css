@@ -1,0 +1,93 @@
+/* Nav Link Component CSS */
+.nav-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style-type: none;
+    display: none;
+}
+
+.nav-link .nav-item {
+    margin-left: 1rem;
+}
+
+.nav-link .nav-item a {
+    color: inherit;
+    display: inline-block;
+    text-decoration: none;
+    position: relative;
+    transition: .4s ease-out;
+}
+
+.nav-link .nav-item:not(.social-link) a::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translate(-50%, .25rem);
+    width: 0px;
+    height: 0px;
+    border-radius: 4px;
+    background: var(--orange);
+    transition: .4s ease-out;
+}
+
+.nav-link .nav-item:not(.social-link) a:hover::after,
+.nav-link .nav-item.active:not(.social-link) a::after {
+    width: 4px;
+    height: 4px;
+}
+
+.social-link:hover {
+    color: var(--orange);
+}
+
+.hamburger {
+    font-size: 1.2rem;
+}
+
+.hamburger-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    list-style-type: none;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    background: var(--orange);
+    z-index: 10;
+    transition: .4s ease-out;
+    pointer-events: none;
+    opacity: 0;
+}
+
+.hamburger-link.show {
+    pointer-events: all;
+    opacity: 1;
+}
+
+.hamburger-item {
+    font-size: 1.4rem;
+    margin: 1rem 0;
+    color: #fff;
+}
+
+.hamburger-close {
+    position: absolute;
+    right: 2rem;
+    top: 2rem;
+    color: #fff;
+}
+
+@media only screen and (min-width: 768px) {  
+    .nav-link {
+        display: flex;
+    }
+    
+    .hamburger {
+        display: none;
+    }
+}

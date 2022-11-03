@@ -1,0 +1,108 @@
+/* Footer Layout CSS */
+#footer {
+    width: 100%;
+    height: auto;
+    padding: 2rem 25px;
+    background: rgb(14, 13, 12);
+    color: #fff;
+}
+
+#footer .footer-top,
+#footer .footer-bottom {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 2rem;
+    justify-items: start;
+}
+
+#footer .footer-bottom {
+    margin-top: 2rem;
+    padding-top: 2rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.25);
+    font-size: .9rem;
+    color: rgba(255, 255, 255, 0.75);
+}
+
+#footer .footer-bottom .nav-link {
+    display: flex;
+}
+
+#footer .footer-bottom .nav-link .nav-item {
+    margin: 0;
+    margin-right: .5rem;
+}
+
+#footer .footer-bottom .nav-link .nav-item i {
+    font-size: 1rem;
+    border: 1px solid rgba(255, 255, 255, 0.75);
+    border-radius: 50%;
+    width: 2rem;
+    height: 2rem;
+    text-align: center;
+    line-height: 2rem;
+}
+
+#footer .footer--subscription h1 {
+    font-size: 1.25rem;
+}
+
+#footer .footer--subscription p {
+    font-size: .9rem;
+    color: rgba(255, 255, 255, 0.75);
+    margin: 1rem 0;
+}
+
+#footer .footer--quick-links h2,
+#footer .footer--contact-us h2 {
+    font-size: 1.15rem;
+}
+
+#footer .footer--quick-links ul,
+#footer .footer--contact-us ul {
+    list-style-type: none;
+    font-size: 0.9rem;
+    color: rgba(255, 255, 255, 0.75);
+    margin-top: 1rem;
+}
+
+#footer .footer--quick-links ul li,
+#footer .footer--contact-us ul li {
+    margin-top: .5rem;
+    transition: .4s ease-out;
+}
+
+#footer .footer--quick-links ul li:hover {
+    color: #fff;
+}
+
+#footer .footer--contact-us ul li i {
+    margin-right: .5rem;
+}
+
+@media only screen and (min-width: 768px) {
+    #footer {
+        padding: 2rem 50px;
+    }
+
+    #footer .footer-bottom {
+        grid-template-columns: repeat(2, 1fr);
+        justify-items: end;
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+    #footer {
+        padding: 2rem 100px;
+    }
+    
+    #footer .footer-top {
+        grid-template-columns: repeat(3, 1fr);
+        justify-items: center;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    #footer {
+        padding: 4rem 150px;
+    }
+}

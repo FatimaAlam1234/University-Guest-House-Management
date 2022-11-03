@@ -1,0 +1,92 @@
+/* Nav Layout CSS */
+#nav {
+    width: 100%;
+    height: auto;
+}
+
+#nav .nav-top,
+#nav .nav-bottom {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid var(--separator);
+    padding: 0 25px;
+    width: 100%;
+}
+
+#nav .nav-top {
+    height: 50px;
+    font-size: .8rem;
+    display: none;
+}
+
+#nav .nav-bottom {
+    height: 100px;
+}
+
+#nav .nav-top .nav-top--left,
+#nav .nav-top .nav-top--right {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+#nav .nav-top .nav-top--left .box,
+#nav .nav-top .nav-top--right .box {
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.box--email {
+    margin-right: 1rem;
+    padding-right: 1rem;
+    border-right: 1px solid var(--separator);
+}
+
+.box--social-media {
+    margin-right: 1rem;
+}
+
+.box--title {
+    font-size: 1.25rem;
+    transition: .4s ease-out;
+}
+
+@media only screen and (min-width: 768px) {  
+    #nav {
+        height: 150px;
+    }
+    
+    #nav .nav-top {
+        display: flex;
+    }
+
+    #nav .nav-top,
+    #nav .nav-bottom {
+        padding: 0 50px;
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+    #nav .nav-top {
+        font-size: .9rem;
+    }
+    
+    #nav .nav-top,
+    #nav .nav-bottom {
+        padding: 0 100px;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    #nav .nav-top,
+    #nav .nav-bottom {
+        padding: 0 150px;
+    }
+
+    .box--title {
+        font-size: 1.5rem;
+    }
+}

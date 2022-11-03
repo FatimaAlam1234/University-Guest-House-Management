@@ -1,0 +1,82 @@
+/* Form Component CSS */
+.form {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.form input {
+    background: none;
+    outline: none;
+    border: none;
+    color: inherit;
+    padding: .5rem 1rem;
+    font-family: inherit;
+}
+
+.form--header {
+    background: #fff;
+    color: #333;
+    padding: 2rem 1.5rem;
+    border-radius: .5rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.32);
+}
+
+@media only screen and (min-width: 1024px) {
+    .form--header {
+        padding: 2.5rem 2rem;
+    }
+}
+
+.form-title {
+    font-family: 'Merriweather', serif;
+    font-size: 1.15rem;
+    margin-bottom: 1rem;
+    color: var(--orange);
+}
+
+.form-group {
+    margin-top: 1rem;
+}
+
+.form-group label {
+    display: block;
+    font-size: 0.9rem;
+    font-weight: bold;
+}
+
+.form-group .form-control {
+    border: 1px solid var(--separator);
+    width: 100%;
+    display: block;
+    margin-top: 0.5rem;
+    font-size: .8rem;
+    font-family: inherit;
+}
+
+@media only screen and (min-width: 1024px) {
+    .form-title {
+        font-size: 1.4rem;
+    }
+    
+    .form-group .form-control {
+        font-size: .9rem;
+    }
+}
+
+.form--footer {
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.form--footer input {
+    flex: 1;
+}
+
+.form--footer i {
+    background: var(--orange);
+    padding: .5rem 1rem;
+    font-size: 1.4rem;
+}

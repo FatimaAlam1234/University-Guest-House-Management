@@ -1,0 +1,44 @@
+/* Cards Component CSS */
+.card--room {
+    width: 100%;
+    height: 500px;
+    color: #fff;
+    padding: 0 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.card-header h3 {
+    font-family: 'Merriweather', serif;
+    font-size: 1.8rem;
+    color: var(--orange);
+}
+
+.card-header p {
+    color: var(--orange);
+    font-size: 1.4rem;
+    font-family: 'Merriweather', serif;
+}
+
+.card-header p span {
+    color: #fff;
+    font-size: 1rem;
+    font-family: 'Poppins', sans-serif;
+}
+
+.card-body {
+    margin: 2rem 0;
+}
+
+.card-body > div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: .5rem 0;
+}
+
+.card-body > div p:last-child {
+    flex: 1;
+    text-align: right;
+}

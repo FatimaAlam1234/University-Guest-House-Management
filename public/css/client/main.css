@@ -1,0 +1,58 @@
+@import "./base/reset.css";
+
+@import "./components/nav-link.css";
+@import "./components/button.css";
+@import "./components/form.css";
+@import "./components/card.css";
+
+@import "./layouts/nav.css";
+@import "./layouts//header.css";
+@import "./layouts/footer.css";
+
+@import "./pages/home.css";
+
+@import "./vendor/font-awesome.css";
+
+/* Pagination Component CSS */
+#pagination {
+    margin-bottom: 4rem;
+}
+
+#pagination .pagination {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style-type: none;
+}
+
+#pagination .pagination .page-item {
+    margin: 0 25px;
+    border: 1px solid var(--orange);
+    width: 2rem;
+    height: 2rem;
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--orange);
+    transition: .4s ease-out;
+    cursor: pointer;
+}
+
+#pagination .pagination .page-item.disabled {
+    cursor: not-allowed;
+}
+
+#pagination .pagination .page-item.active,
+#pagination .pagination .page-item:hover:not(.disabled) {
+    background: var(--orange);
+    color: #fff;
+}
+
+#pagination .pagination .page-item .page-link {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

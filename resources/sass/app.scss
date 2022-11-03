@@ -1,0 +1,25 @@
+// Fonts
+@import url('https://fonts.googleapis.com/css?family=Nunito');
+
+// Variables
+@import 'variables';
+
+// Bootstrap
+@import '~bootstrap/scss/bootstrap';
+
+// AdminLTE 3
+@import '~admin-lte/dist/css/adminlte.min.css';
+@import '~admin-lte/plugins/fontawesome-free/css/all.min.css';
+@import '~admin-lte/plugins/icheck-bootstrap/icheck-bootstrap.min.css';
+
+.router-link-active.sidebar-link {
+    background: linear-gradient(30deg, rgb(48, 48, 182), rgb(67, 67, 223));
+    color: #fff !important;
+}
+
+.profile-user-img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    object-position: center;
+}
